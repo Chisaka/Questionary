@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+	<h1>秘密のアンケート</h1><hr>
+
+	<form method="post" action="work_servlet.java">
+		性別<input type="radio" name="sex" value="男性" />男性
+			<input type="radio" name="sex" value="女性" />女性<br>
+		年齢<input type="number" name="age" maxlength="3" /><br>
+		職業
+		<select name="job">
+			<option value="会社員">会社員</option>
+			<option value="学生">学生</option>	
+		</select><br><br>
+		今日の気分<br>
+		<textarea name="today" rows="3" cols="30">(例) ウィットに富んだジョークでもかましたい気分だ。</textarea><br>
+
+		<input type="submit" value="送信">
+	</form>
+	</body>
+</html>
